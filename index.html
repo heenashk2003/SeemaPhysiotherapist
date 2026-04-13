@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Seema Advance Clinic</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header class="navbar">
+<div class="logo">
+    <img src="logo.webp" alt="Clinic Logo">
+    <span>Seema Advance Clinic</span>
+</div>    <nav>
+        <!-- <a href="#">Home</a> -->
+        <a href="#" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#doctor">Doctors</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+
+    <!-- SLIDES -->
+    <div class="slides">
+        <div class="slide active" style="background-image: url('https://t3.ftcdn.net/jpg/00/92/34/56/360_F_92345619_pUlEznFdreTJy5amSBspNNtQT0sqhTwM.jpg');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef');"></div>
+        <div class="slide" style="background-image: url('https://images.unsplash.com/photo-1581594693702-fbdc51b2763b');"></div>
+         <button class="prev">&#10094;</button>
+  <button class="next">&#10095;</button>
+</div>
+    </div>
+
+    <!-- OVERLAY CONTENT -->
+    <div class="overlay">
+        <div class="hero-content">
+            <h1>Advanced Physiotherapy Care</h1>
+            <p>Restore Movement • Reduce Pain • Improve Life</p>
+            <button class="btn" onclick="scrollToContact()">Book Appointment</button>
+        </div>
+    </div>
+
+</section>
+
+<!-- SLIDER + TEXT SECTION -->
+<section class="slider-section">
+
+    <!-- LEFT: IMAGE SLIDER -->
+    <div class="slider-box">
+    <div class="slides">
+        <img src="https://images.unsplash.com/photo-1580281657527-47b7e5a7d6a3" class="active">
+<img src="https://images.unsplash.com/photo-1584515933487-779824d29309" class="active">
+<img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907">
+    </div>
+</div>
+
+    <!-- RIGHT: TEXT -->
+    <div class="slider-text">
+        <h2>Why Choose Us?</h2>
+        <p>
+            We provide advanced physiotherapy treatments with modern equipment and expert care.
+            Our focus is on faster recovery and long-term health improvement.
+        </p>
+
+        <ul>
+            <li>✔ Experienced Doctors</li>
+            <li>✔ Modern Equipment</li>
+            <li>✔ Personalized Care</li>
+        </ul>
+
+        <button onclick="scrollToContact()">Book Appointment</button>
+    </div>
+
+</section>
+
+<!-- <div class="slide active">
+    <img src="...">
+    <div class="slide-text">Advanced Treatment</div>
+</div> -->
+
+<!-- About -->
+<section id="about" class="about">
+    <div class="container">
+        <h2>About Clinic</h2>
+        <p>
+            We specialize in advanced physiotherapy treatments using modern techniques.
+            Our expert team focuses on personalized care and faster recovery.
+        </p>
+    </div>
+</section>
+
+<!-- Services -->
+<section id="services" class="services">
+    <h2>Our Services</h2>
+
+    <div class="service-container">
+        <div class="service-card">
+            <h3>Orthopedic Rehab</h3>
+            <p>Joint pain and post-surgery recovery.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Neuro Therapy</h3>
+            <p>Stroke and paralysis treatment.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Sports Injury</h3>
+            <p>Fast recovery for athletes.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>Cardio Rehab</h3>
+            <p>Heart and lung therapy support.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Doctor -->
+<section id="doctor" class="doctor">
+    <h2>Our Expert</h2>
+
+    <div class="doctor-card">
+        <img src="data:image/webp;base64,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" alt="Doctor">
+        <h3>Dr. Seema</h3>
+        <p>Senior Physiotherapist</p>
+    </div>
+</section>
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <h2>What Patients Say</h2>
+
+    <div class="testimonial-box">
+        <p>"Amazing treatment! Pain reduced in few sessions."</p>
+        <h4>- Patient</h4>
+    </div>
+
+    <div class="testimonial-box">
+        <p>"Highly professional and friendly staff."</p>
+        <h4>- Client</h4>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="contact">
+    <h2>Book Appointment</h2>
+
+    <form>
+        <input type="text" placeholder="Name" required>
+        <input type="email" placeholder="Email" required>
+        <input type="text" placeholder="Phone" required>
+        <textarea placeholder="Your Problem"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Seema Advance Clinic</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let slides = document.querySelectorAll(".slide");
+    let index = 0;
+
+    function showSlide() {
+        slides.forEach((slide) => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+        index = (index + 1) % slides.length;
+    }
+
+    setInterval(showSlide, 3000);
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const slides = document.querySelectorAll('.slide');
+  const prev = document.querySelector('.prev');
+  const next = document.querySelector('.next');
+
+  let current = 0;
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if(i === index) slide.classList.add('active');
+    });
+  }
+
+  prev.addEventListener('click', () => {
+    current = (current === 0) ? slides.length - 1 : current - 1;
+    showSlide(current);
+  });
+
+  next.addEventListener('click', () => {
+    current = (current === slides.length - 1) ? 0 : current + 1;
+    showSlide(current);
+  });
+});
+</script>
+
+</body>
+</html>
